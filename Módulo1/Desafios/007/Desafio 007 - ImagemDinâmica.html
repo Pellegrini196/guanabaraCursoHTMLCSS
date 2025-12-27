@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 1, Desafio 7">
+    <meta name="keywords" content="Guanabara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Desafio 007 - Imagem Dinâmica</title>
+</head>
+
+<body>
+    <h1>Desafio 007 - Imagem Dinâmica.</h1>
+    <p>Este site proporciona um exemplo de imagem dinâmica, que altera seu dimensionamento de acordo com o tamanho da tela.</p>
+    <picture>
+        <source media="(max-width:350px)" srcset="imagem-300.jpg" type="image/jpeg">
+        <source media="(max-width:750px)" srcset="imagem-700.jpg" type="image/jpeg">
+        <img src="imagem-1000.jpg" alt="Imagem Original">
+    </picture>
+</body>
+
+</html>

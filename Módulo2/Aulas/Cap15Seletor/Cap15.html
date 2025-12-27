@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 2, Capítulo 15, Aula 1 a 4.">
+    <meta name="keywords" content="Guanabara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Exercício 015 - Seletores Personalizados</title>
+
+    <style>
+        p {
+            font-size: 1.5em;
+        }
+        #Direita {
+            text-align: end;
+        }
+        #Centro {
+            text-align: center;
+        }
+        #Justificado {
+            text-align: justify;
+            background-color: lightyellow;
+        }
+        div {
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            background-color: blueviolet;
+        }
+        div#rosa {
+            background-color: pink;
+        }
+        div#vermelha {
+            background-color: rgb(185, 49, 49);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alinhando os textos: com CLASSES e IDs</h1>
+    <p>Este possui alinhamento padrão, na esquerda.</p>
+    <p id="Direita">O segundo, à direita.
+    <p id="Centro">O terceiro, sendo centralizado.</p>
+    <p id="Justificado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa molestiae laborum quo exercitationem! Cumque, ab vero doloribus optio inventore rerum accusamus similique necessitatibus a voluptas quas quo quisquam impedit natus illo nam aliquid temporibus, voluptatum sequi iusto saepe molestias placeat ullam dolorum! Deserunt, itaque iure ab voluptates harum, quia esse, maxime hic rem reprehenderit veniam recusandae atque! Ea aliquid doloribus sint vitae, esse possimus odio! Ipsam doloribus officia nulla veritatis animi rerum, sunt repellendus possimus? Eveniet quos ducimus dicta explicabo earum illum reprehenderit beatae, non officiis repellendus minus, similique corrupti? Et exercitationem doloremque id voluptates beatae nam aperiam culpa earum?</p>
+</body>
+    <div></div>
+    <div id="rosa"></div>
+    <div id="vermelha"></div>
+</html>
