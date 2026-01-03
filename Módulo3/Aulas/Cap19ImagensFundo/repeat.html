@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 2, Capítulo 19, Aula 1 a 7.">
+    <meta name="keywords" content="Guanabara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="refresh" content="200">
+    <title>Exercício 017 - Imagens de Fundo</title>
+</head>
+
+<style>
+    div.containerQuadrado {
+        display: inline-block;
+        margin: 5px;
+        width: 600px;
+        height: 600px;
+        background-color: grey;
+        border: 2px solid black;
+    }
+
+    div#Q1 {
+        background-image: url('assets/pattern003.png');
+        background-repeat: repeat;
+    }
+
+    div#Q2 {
+        background-image: url('assets/pattern003.png');
+        background-repeat: repeat-x;
+    }
+
+    div#Q3 {
+        background-image: url('assets/pattern003.png');
+        background-repeat: repeat-y;
+    }
+
+    div#Q4 {
+        background-image: url('assets/pattern003.png');
+        background-repeat: no-repeat;
+    }
+
+
+
+</style>
+
+<body>
+    <h1>Aula 19 - Uso de Imagens</h1>
+    <h3>RepeatImage</h3>
+    <h4>background-repeat: repeat;</h4>
+    <p>Repete a imagem em sentido vertical e horizontal, o padrão.</p>
+    <div class="containerQuadrado" id="Q1"></div>
+
+    <h4>background-repeat: repeat-x;</h4>
+    <p>Apenas repete o eixo horizontal.</p>
+    <div class="containerQuadrado" id="Q2"></div>
+
+    <h4>background-repeat: repeat-y;</h4>
+    <p>Apenas repete o eixo vertical.</p>
+    <div class="containerQuadrado" id="Q3"></div>
+
+    <h4>background-repeat: no-repeat;</h4>
+    <p>Sem repetições, a imagem é carregada uma única vez</p>
+    <div class="containerQuadrado" id="Q4"></div>
+</body>
+</html>
