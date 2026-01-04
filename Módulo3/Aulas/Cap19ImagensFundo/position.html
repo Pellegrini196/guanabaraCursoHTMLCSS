@@ -13,6 +13,7 @@
 </head>
 
 <style>
+
     div.containerQuadrado {
         display: inline-block;
         margin: 5px;
@@ -23,47 +24,43 @@
     }
 
     div#Q1 {
-        background-image: url('assets/pattern003.png');
-        background-repeat: repeat;
+        background-image: url('assets/wallpaper003.jpg');
+        background-position: left top;
     }
 
     div#Q2 {
-        background-image: url('assets/pattern003.png');
-        background-repeat: repeat-x;
+        background-image: url('assets/wallpaper003.jpg');
+        background-position: right bottom;
     }
 
     div#Q3 {
-        background-image: url('assets/pattern003.png');
-        background-repeat: repeat-y;
+        background-image: url('assets/wallpaper003.jpg');
+        background-position: center top;
     }
 
     div#Q4 {
-        background-image: url('assets/pattern003.png');
-        background-repeat: no-repeat;
+        background-image: url('assets/wallpaper003.jpg');
+        background-position: center center;''
     }
 
 </style>
 
 <body>
     <h1>Aula 19 - Uso de Imagens</h1>
-    <h3>RepeatImage</h3>
-    <h4>background-repeat: repeat;</h4>
-    <p>Repete a imagem em sentido vertical e horizontal, o padrão.</p>
+    <h3>PositionImage</h3>
+    <h4>background-position: left top;</h4>
     <div class="containerQuadrado" id="Q1"></div>
 
-    <h4>background-repeat: repeat-x;</h4>
-    <p>Apenas repete o eixo horizontal.</p>
+    <h4>background-position: right bottom;</h4>
     <div class="containerQuadrado" id="Q2"></div>
 
-    <h4>background-repeat: repeat-y;</h4>
-    <p>Apenas repete o eixo vertical.</p>
+    <h4>background-position: center top;</h4>
     <div class="containerQuadrado" id="Q3"></div>
 
-    <h4>background-repeat: no-repeat;</h4>
-    <p>Sem repetições, a imagem é carregada uma única vez</p>
+    <h4>background-position: center center;</h4>
     <div class="containerQuadrado" id="Q4"></div>
     <hr>
-    <a href="background.html">Anterior: BackgroundImage</a>
+    <a href="repeat.html">Anterior: Repetição das imagens</a>
     <br>
     <a href="position.html">Próximo: Posição das imagens</a>
 </body>
