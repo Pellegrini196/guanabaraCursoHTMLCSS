@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 3, Capítulo 21, Aula 1 a 14.">
+    <meta name="keywords" content="Modelo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Exercício 023 - Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even)#povo {
+        background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd)#povo {
+        background-color: rgb(255, 255, 255);
+        }
+        
+        #un {
+            background-color: lightgrey;
+        }
+
+        #on {
+            background-color: rgba(0, 0, 0, 0.856);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 023 - Tabelas</h1>
+
+    <h4>Simples: 3x4</h4>
+    <table>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Grande: 2x29</h4>
+    <table>
+        <caption id="un">Unidades Federativas: População </caption>
+        <thead id="on">
+            <tr>
+                <th scope="col" style="width: 50vh;">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="povo">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr id="povo">
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr id="povo">
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr id="povo">
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr id="povo">
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr id="povo">
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+            <tr id="povo">
+                <td>Pernambuco</td>
+                <td>9.557.071</td>
+            </tr>
+            <tr id="povo">
+                <td>Ceará</td>
+                <td>9.132.078</td>
+            </tr>
+            <tr id="povo">
+                <td>Pará</td>
+                <td>8.602.865</td>
+            </tr>
+            <tr id="povo">
+                <td>Santa Catarina</td>
+                <td>7.164.788</td>
+            </tr>
+            <tr id="povo">
+                <td>Maranhão</td>
+                <td>7.075.181</td>
+            </tr>
+            <tr id="povo">
+                <td>Goiás</td>
+                <td>7.018.354</td>
+            </tr>
+            <tr id="povo">
+                <td>Amazonas</td>
+                <td>4.144.597</td>
+            </tr>
+            <tr id="povo">
+                <td>Espírito Santo</td>
+                <td>4.018.650</td>
+            </tr>
+            <tr id="povo">
+                <td>Paraíba</td>
+                <td>4.018.127</td>
+            </tr>
+            <tr id="povo">
+                <td>Rio Grande do Norte</td>
+                <td>3.506.853</td>
+            </tr>
+            <tr id="povo">
+                <td>Mato Grosso</td>
+                <td>3.484.466</td>
+            </tr>
+            <tr id="povo">
+                <td>Alagoas</td>
+                <td>3.337.357</td>
+            </tr>
+            <tr id="povo">
+                <td>Piauí</td>
+                <td>3.273.227</td>
+            </tr>
+            <tr id="povo">
+                <td>Distrito Federal</td>
+                <td>3.015.268</td>
+            </tr>
+            <tr id="povo">
+                <td>Mato Grosso do Sul</td>
+                <td>2.778.986</td>
+            </tr>
+            <tr id="povo">
+                <td>Sergipe</td>
+                <td>2.298.696</td>
+            </tr>
+            <tr id="povo">
+                <td>Rondônia</td>
+                <td>1.777.225</td>
+            </tr>
+            <tr id="povo">
+                <td>Tocantins</td>
+                <td>1.572.866</td>
+            </tr>
+            <tr id="povo">
+                <td>Acre</td>
+                <td>881.935</td>
+            </tr>
+            <tr id="povo">
+                <td>Amapá</td>
+                <td>845.731</td>
+            </tr>
+            <tr id="povo">
+                <td>Roraima</td>
+                <td>605.761</td>
+            </tr>
+            <tfoot id="on">
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>210.147.125</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+
+    <h4>Mesclagem: Rowspan & Colspan </h4>
+    <table>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td colspan="2">M</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Mesclagem2: Exercícios</h4>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+
+            <tr>
+                <th colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
