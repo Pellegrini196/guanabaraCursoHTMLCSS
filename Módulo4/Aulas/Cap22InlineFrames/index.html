@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 3, Capítulo 21, Aula 1 a 14.">
+    <meta name="keywords" content="Modelo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 024 - InlineFrames</title>
+    <style>
+        iframe.curso {
+            width: 500px;
+            height: 500px;
+        }
+        iframe.tela {
+            width: 80vw;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 024 - InlineFrames</h1>
+    <p>Acessando o site do curso em vídeo, para realização de testes.</p>
+    <hr>
+    <iframe class="curso" frameborder="0" src="https://www.cursoemvideo.com"></iframe>
+    <hr>
+    <p>Temos também o repositório do professor Guanabara.</p>
+    <iframe class="curso" frameborder="0" scrolling="no" src="https://gustavoguanabara.github.io"></iframe>
+    <hr>
+    <p>Ainda, é possível utilizar páginas locais com o iframe.</p>
+    <iframe class="curso" frameborder="0" src="index2.html"></iframe>
+    <hr>
+    <p>Também, a sintaxe 'a' pode ser utilizar para alternar o conteúdo de um iframe.</p>
+    <ul>
+        <li><a href="sitestestagem/pag1.html" target="sumario">PrimeiraPágina</a></li>
+        <li><a href="sitestestagem/pag2.html" target="sumario">SegundaPágina</a></li>
+        <li><a href="sitestestagem/pag3.html" target="sumario">TerceiraPágina</a></li>
+    </ul>
+    <iframe class="tela" name="sumario" frameborder="0" srcdoc="<h1>Este é um iframe de exemplo, selecione no sumário qual destes três você deseja.</h1>"></iframe>
+
+</body>
