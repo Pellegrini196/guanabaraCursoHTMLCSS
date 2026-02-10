@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 3, Capítulo 21, Aula 1 a 14.">
+    <meta name="keywords" content="Modelo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Desafio 013 - Apresentação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            min-height: 100%;
+            width: 100%;
+            background-color: rgb(79, 75, 75);
+            text-align: center;
+            font-size: 15px;
+            background-attachment: fixed;
+            overflow-y: hidden;
+        }
+
+        body > main {
+            color: rgb(31, 25, 25);
+            position: relative;
+            min-height: 100vh
+        }
+
+        img.logo {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            transition: box-shadow 0.2s ease, border-color 0.2s ease;
+            display: block;
+            margin: 6px auto;
+        }
+
+        img.logo:hover {
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 900px;
+            height: 700px;
+            background: url(assets/mockuplaptop-medium.png) no-repeat center;
+        }
+
+        iframe#tela {
+            position: relative;
+            top: 131px;
+            width: 618px;
+            height: 395px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+        }
+        aside {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 150px;
+            right: 50px;
+        }
+
+        aside > img {
+            border: 2px solid white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+        hr {
+            border: 0px;
+        }
+
+        @media (max-width: 1100px) {
+            html, body {
+                overflow-y: auto;
+            }
+
+            section {
+                position: static;
+                transform: none;
+                margin: 40px auto 20px;
+            }
+
+            aside {
+                position: static;
+                width: auto;
+                height: auto;
+                margin: 0 auto 40px;
+            }
+
+            img.logo {
+                width: 66px;
+                height: 66px;
+                margin: 6px auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <iframe id="tela" src="home.html" name="sites" frameborder="0"></iframe>
+        </section>
+        <aside>
+            <a href="home.html" target="sites">
+            <img class="logo" src="assets/home.png" alt="HomeLogo">
+        </a>
+        <a href="https://www.cursoemvideo.com/" target="sites">
+            <img class="logo" src="assets/cursoemvideo.png" alt="CursoEmVideoLogo">
+        </a>
+        <hr>
+        <a href="https://pellegrini196.github.io/guanabaraCursoHTMLCSS/" target="sites">
+            <img class="logo" src="assets/githublogo.png" alt="GithubLogo">
+        </a>
+        <hr>
+        <a href="https://example.com/" target="sites">
+            <img class="logo" src="assets/domain.jpg" alt="ExampleLogo">
+        </a>
+        <hr>
+        </aside>
+    </main>
+</body>
