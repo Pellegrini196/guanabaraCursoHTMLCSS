@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Murilo Pellegrini">
+    <meta name="description" content="Módulo 4, Capítulo 24, Aula 1 à 11">
+    <meta name="keywords" content="Guanabara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 24 - Formulários</title>
+</head>
+<style>
+    p {
+        padding: 15px;
+    }
+    fieldset {
+        width: 100px;
+    }
+</style>
+<body>
+    <h1>Capítulo 24 - Formulários</h1>
+    <h2>Os primeiros formulários, básicos e semânticos.</h2>
+    <form action="teste.php" method="get">
+        <p>
+            <label for="camponome">Nome:</label>
+            <input type="text" name="fnome" id="camponome">
+            <input type="submit" value="Enviar">
+        </p>
+
+
+        <p>
+            <label for="campopfp">Foto de perfil:</label>
+            <input type="file" value="Escolher arquivo" accept="image/*">
+        </p>
+
+        <p>
+            <label for="campoidade">Idade:</label>
+            <input type="number" name="fidade" id="campoidade" min="1" max="120">
+        </p>
+
+        <p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="fsex" id="mascsex">
+                <label for="mascsex">Masculino</label>
+                <input type="radio" name="fsex" id="femsex">
+                <label for="femsex">Feminino</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <label for="campotel">Telefone:</label>
+            <input type="tel" name="ftel" id="campotel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(XX) XXXX-XXXX">
+        </p>
+
+        <p>
+            <label for="campoemail">Email:</label>
+            <input type="email" name="fmail" id="campoemail" size="30" maxlength="50">
+        </p>
+    </form>
+
+    <form action="senhas.php" method="post">
+        <p>
+        <label for="camposenha">Senha:</label>
+        <input type="password" name="fsenha" id="camposenha" minlength="8" maxlength="12" size="12">
+        </p>
+    </form>
+
+    <form action="outros.php" method="get">
+        <p>
+            <label for="camponasce">Data de nascimento:</label>
+            <input type="month" name="fnasce" id="camponasce">
+        </p>
+
+        <p>
+            <label for="campocompradia">Dia da compra:</label>
+            <input type="date" name="fcompradia" id="campocompradia">
+        </p>
+
+        <p>
+            <label for="campocomprahora">Hora da compra:</label>
+            <input type="time" name="fcomprahora" id="campocomprahora">
+        </p>
+
+        <p>
+            <label for="campocor">Cor:</label>
+            <input type="color" name="fcor" id="campocor">
+        </p>
+
+        <p>
+            <label for="camponivel">Nível de satisfação:</label>
+            <input type="range" name="fnivel" id="camponivel" min="0" max="4">
+        </p>
+
+        <p>
+            <input type="checkbox" name="ftermos" id="campotermos">
+            <label for="campotermos"> Aceito os <a href="termos.html">termos de uso</a></label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h2>Formulários com escolhas:</h2>
+
+    <form action="select.php" method="get">
+        <p>
+            <label for="campomodelo">Modelo do celular</label>
+            <select name="fmodelo" id="campomodelo">
+                <option value="">Escolha...</option>
+                <optgroup label="Apple">
+                    <option value="AIP1132">iPHONE 11 32GB</option>
+                    <option value="AIP11P64">iPHONE 11 PRO 64GB</option>
+                    <option value="AIP11PM256">iPHONE 11 PRO MAX 256GB</option>
+                </optgroup>
+                <optgroup label="Samsung">
+                    <option value="SGXYS10">Galaxy S10 Lite</option>
+                    <option value="SGXYS20U128">Galaxy S20 Ultra 128GB</option>
+                    <option value="SGXYN10256">Galaxy Note 10 256GB</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="campodesc">Especificações técnicas:</label><br>
+            <textarea name="fdesc" id="campodesc" cols="40" rols="10"></textarea>
+        </p>
+
+        <p>
+            <label for="campoprofi">Profissão:</label>
+            <input type="text" name="fprofi" id="campoprofi" list="lstprofi">
+                <datalist id="lstprofi">
+                    <optgroup label="Negócios">
+                        <option value="Administrador"></option>
+                        <option value="Contabilista"></option>
+                        <option value="Gestor de RH"></option>
+                    </optgroup>
+                    <optgroup label="Artes e Design">
+                        <option value="Animador"></option>
+                        <option value="Ator"></option>
+                        <option value="Fotógrafo"></option>
+                    </optgroup>
+                    <optgroup label="Ciências Exatas">
+                        <option value="Analista de Sistemas"></option>
+                        <option value="Estatístico"></option>
+                        <option value="Matemático"></option>
+                    </optgroup>
+                    <optgroup label="Ciências Humanas">
+                        <option value="Advogado"></option>
+                        <option value="Linguista"></option>
+                        <option value="Professor"></option>
+                    </optgroup>
+                </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <h2>Formulários monetários</h2>
+
+    <form action="dinheiro.php" method="post" oninput="campotot.value= Number(campopreco.value) * Number(campoquant.value)">
+        <p>
+            <label for="campoproduto">Produto:</label>
+            <input type="text" name="fproduto" id="campoproduto">
+        </p>
+
+        <p>
+            <label for="campopreco">Preço: R$</label>
+            <input type="number" name="fpreco" id="campopreco">
+        </p>
+
+        <p>
+            <label for="campoquant">Quantidade:</label>
+            <input type="number" name="fquant" id="campoquant">
+        </p>
+
+        <p>
+            <label for="campotot">Total: R$</label>
+            <output name="tot" id="campotot">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+
+</body>
