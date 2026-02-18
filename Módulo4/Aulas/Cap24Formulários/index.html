@@ -20,13 +20,11 @@
 <body>
     <h1>Capítulo 24 - Formulários</h1>
     <h2>Os primeiros formulários, básicos e semânticos.</h2>
-    <form action="teste.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="camponome">Nome:</label>
-            <input type="text" name="fnome" id="camponome">
-            <input type="submit" value="Enviar">
+            <input type="text" name="fnome" id="camponome" autocomplete="name">
         </p>
-
 
         <p>
             <label for="campopfp">Foto de perfil:</label>
@@ -35,7 +33,7 @@
 
         <p>
             <label for="campoidade">Idade:</label>
-            <input type="number" name="fidade" id="campoidade" min="1" max="120">
+            <input type="number" name="fidade" id="campoidade" min="1" max="120" autocomplete="age">
         </p>
 
         <p>
@@ -50,23 +48,25 @@
 
         <p>
             <label for="campotel">Telefone:</label>
-            <input type="tel" name="ftel" id="campotel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(XX) XXXX-XXXX">
+            <input type="tel" name="ftel" id="campotel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(XX) XXXX-XXXX" autocomplete="tel">
         </p>
 
         <p>
             <label for="campoemail">Email:</label>
-            <input type="email" name="fmail" id="campoemail" size="30" maxlength="50">
+            <input type="email" name="fmail" id="campoemail" size="30" maxlength="50" autocomplete="email">
         </p>
-    </form>
 
-    <form action="senhas.php" method="post">
         <p>
         <label for="camposenha">Senha:</label>
-        <input type="password" name="fsenha" id="camposenha" minlength="8" maxlength="12" size="12">
+        <input type="password" name="fsenha" id="camposenha" minlength="8" maxlength="12" size="12" autocomplete="password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
         </p>
     </form>
 
-    <form action="outros.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="camponasce">Data de nascimento:</label>
             <input type="month" name="fnasce" id="camponasce">
@@ -105,7 +105,7 @@
 
     <h2>Formulários com escolhas:</h2>
 
-    <form action="select.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="campomodelo">Modelo do celular</label>
             <select name="fmodelo" id="campomodelo">
@@ -130,7 +130,7 @@
 
         <p>
             <label for="campoprofi">Profissão:</label>
-            <input type="text" name="fprofi" id="campoprofi" list="lstprofi">
+            <input type="text" name="fprofi" id="campoprofi" list="lstprofi" autocomplete="off">
                 <datalist id="lstprofi">
                     <optgroup label="Negócios">
                         <option value="Administrador"></option>
@@ -161,20 +161,20 @@
 
     <h2>Formulários monetários</h2>
 
-    <form action="dinheiro.php" method="post" oninput="campotot.value= Number(campopreco.value) * Number(campoquant.value)">
+    <form action="cadastro.php" method="post" autocomplete="off" oninput="campotot.value= Number(campopreco.value) * Number(campoquant.value)">
         <p>
             <label for="campoproduto">Produto:</label>
-            <input type="text" name="fproduto" id="campoproduto">
+            <input type="text" name="fproduto" id="campoproduto" autocomplete="off">
         </p>
 
         <p>
             <label for="campopreco">Preço: R$</label>
-            <input type="number" name="fpreco" id="campopreco">
+            <input type="number" name="fpreco" id="campopreco" autocomplete="off">
         </p>
 
         <p>
             <label for="campoquant">Quantidade:</label>
-            <input type="number" name="fquant" id="campoquant">
+            <input type="number" name="fquant" id="campoquant" autocomplete="off">
         </p>
 
         <p>
