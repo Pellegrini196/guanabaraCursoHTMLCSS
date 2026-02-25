@@ -11,4 +11,11 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 0px lightblue;
 }
