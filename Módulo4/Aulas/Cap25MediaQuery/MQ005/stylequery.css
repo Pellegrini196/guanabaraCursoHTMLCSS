@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Todas as mídias*/
+
+    /*DeviceBreakpoints - O tamanho do layout de acordo com a tela utilizada.
+    Pequenas telas: até 576px
+    Tablets: até 768px
+    Laptops: até 992px
+    Desktop e TVs: até 1200px*/
+
+@media screen and (min-width: 768px){
+    i#burguer {
+        display: none;
+    }
+
+    menu#menu {
+        display: block;
+    }
+
+    section > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}

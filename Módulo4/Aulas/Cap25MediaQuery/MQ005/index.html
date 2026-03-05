@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Murilo Pellegrini">
+        <meta name="description" content="Módulo 4, Capítulo 25, Aula 1 à 12">
+        <meta name="keywords" content="Guanabara">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 26 - MediaQueries</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylequery.css">
+    </head>
+    <body onresize="mudouTamanho()">
+        <header>
+            <h1>Exercício 26 - MediaQueries</h1>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="menu">
+                <nav>
+                    <section>
+                        <ul>
+                            <li><a href="#">Opção 1</a></li>
+                            <li><a href="#">Opção 2</a></li>
+                            <li><a href="#">Opção 3</a></li>
+                            <li><a href="#">Opção 4</a></li>
+                            <li><a href="#">Opção 5</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </menu>
+        </header>
+        <main>
+            <section>
+                <h2>Título do texto: Capítulo 26</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro beatae quo vel. Voluptate, exercitationem. Officiis accusantium animi totam alias ratione voluptatem exercitationem nulla earum, vero quas accusamus labore asperiores, nobis cumque provident dolorum repudiandae autem rerum delectus quis quo laborum obcaecati? Quidem ipsa non, ex aspernatur a sapiente iure aut labore vero pariatur, nobis dolorem consectetur distinctio mollitia incidunt ut maiores. Quam fugit ipsum mollitia repudiandae, voluptatum distinctio omnis temporibus, obcaecati voluptatibus pariatur alias adipisci! Illo dignissimos repudiandae unde obcaecati illum dolor quos reprehenderit amet vero, sit iusto ex a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae alias aspernatur debitis quam animi recusandae corrupti, omnis voluptates beatae obcaecati eos? Ipsum at alias maxime est, qui possimus tempore sed natus obcaecati quis. Doloremque dicta distinctio natus dolor ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae alias aspernatur debitis quam animi recusandae corrupti, omnis voluptates beatae obcaecati eos? Ipsum at alias maxime est, qui possimus tempore sed natus obcaecati quis. Doloremque dicta distinctio natus dolor ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae alias aspernatur debitis quam animi recusandae corrupti, omnis voluptates beatae obcaecati eos? Ipsum at alias maxime est, qui possimus tempore sed natus obcaecati quis. Doloremque dicta distinctio natus dolor ut.</p>
+            </section>
+        </main>
+        <script>
+            function clickMenu () {
+                var menu = document.getElementById('menu')
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none'
+                } else {
+                    menu.style.display = 'block'
+                }
+            }
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'block'
+                } else {
+                    menu.style.display = 'none'
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: grey;
+}
+
+h1,h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+menu#menu {
+    display: none;
+}
+
+ul > li {
+    background-color: rgba(0, 0, 0, 0.26);
+    color: black;
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+i#burguer {
+    background-color: rgba(0, 0, 0, 0.452);
+    color: white;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+i#burguer:hover {
+    background-color: rgba(255, 255, 255, 0.473);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /*Estabilizar o quadro com viewport*/
+    margin: 0 auto;
+}
+
+main > section {
+    padding: 20px;
+    background-color: rgba(243, 247, 252, 0.432);
+}
+
+section > p {
+    margin: 10px;
+    text-align: justify;
+}
