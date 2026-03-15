@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div.container {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+div.item {
+    background-color: grey;
+    border: 1px solid black;
+    flex: auto; /*Estende os elementos para que preencham o elemento-pai*/
+}
